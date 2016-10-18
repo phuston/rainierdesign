@@ -60,7 +60,11 @@
                     </p>
                     <h2>What is your design?</h2>
                     <p>
-                    Response here
+                    Our design assigns the user a set number of tasks on a daily basis that range from concrete, detailed instructions to open-ended, conversation starters that may help the wedding planners create contingency plans, compromise on hard decisions, and generally provide the advice and insight that a traditional wedding planner has gained from experience. An example of these conversation starters would be a notification we give to the user that reads “Have you considered how the weather on May 16 will affect your plans for the ceremony?”. The user will receive notifications on their phone in addition to seeing these tasks in our app. The user will be able to customize and create their own tasks, indicate which tasks pertain to their wedding, and view their progress as they continue their wedding planning process.
+                    </p>
+
+                    <p>
+                    Apart from our conversation starters, the core concept is no different from the hundreds-of-items long wedding checklists provided by some of our inspirational designs like The Knot and Wedding Wire. These wedding checklists indicate to the user what they have done and what they have yet to do. Our feedback from users is that these checklists are overwhelming, rigid, and inflexible. Our solution was to drastically change the interface, allowing the user to set only as many tasks as they would like to see only as often as they would like to see them. We are also giving them the ability to create their own tasks. These tasks never appear as one gigantic checklist in the app and instead are divided by categories or the days the tasks are scheduled to be completed on.
                     </p>
 
                     <h2>How does it work?</h2>
@@ -70,19 +74,84 @@
                     
                     <h2>How well does it meet user needs?  In what ways does it fall short? </h2>
                     <p>
-                    Response here
+                    When we asked users how they know what to plan and how they keep track of all the details, they usually refer to the wedding planning checklist and excel sheets. The wedding checklist is an outline of all the tasks to complete, and when they should be completed. This static, paper checklist is not suitable for the needs of all users because they might want more, less, or different things than those listed in the wedding checklist. Our app would provide customization, so that the user does not have to do tasks they do not need or want at their wedding. Instead in the signup process, they can identify what they do want at their wedding, and of course they can change these preferences any time.
+                    </p>
+
+                    <div align="center">
+                    <img src="images/designdevelopmentimgs/checklist.jpg">
+                    </div>
+                    <br>
+
+                    <p>
+                    Users open their binder or their wedding checklist and they might get overwhelmed by the numerous tasks they have to complete. Upon initial setup, the user would be prompted to enter which times of the week they would like to focus on wedding planning and how many tasks they would like to receive each alert time. In this way, they get into a consistent rhythm of working on the wedding when they have time. Our app handles the long term planning process, providing them with only a handful of tasks at a time, mitigating the stress of long term planning.
+                    </p>
+
+                    <p>
+                    Our app would also ask the user to consider things they might not have previously considered. The role of a hired wedding planner is to think of the details that a bride planning her own wedding has not previously considered. Among the tasks for the day, one card could be a “have you considered” card? These cards would be conversation starters between the bride and groom, or something for members of the wedding party to consider, based on what we know about their wedding or things that we foresee could go wrong. We expect that most of the time, these “have you considered” questions might not be relevant or they might have already thought about it. However, in the instance that our thought for them to consider is actually relevant, we quantify this as success.
+                    </p>
+
+                    <p>
+                    For example, if one of the tasks is “research florists”. Our app only reminds the user to research florists. It does not contain any information about their florist options or where to research florists. Our app does not hold this kind of data. Every user we have interviewed uses excel sheets or Google docs. That works really well for some people, but it can get messy for others. Our app falls short of organizing, editing, and storing information about their research, schedule or lists. 
                     </p>
 
                     <h2>What important alternative designs did you consider, either initially or during the refinement of this idea?   Why did you reject them/prefer the one you chose?</h2>
                     <p>
-                    Response here
+                    During the development of our current design, we put a lot of consideration into alternative designs that could fill a similar space. The most critical part of the design in contention was the presentation and level of abstraction of the task list to the user. As noted in our inspirational design overview, we identified WeddingWire and The Knot as popular applications that in part fill a similar space as wedding task management. Taking these designs into consideration, we developed several different designs for task management. 
+                    </p>
+
+                    <p>
+                    The first design we considered was to allow the users to see and edit the entire task list as soon as the initial sign-up was presented. While this design allows for a lot of customizability, there are issues with seriously overwhelming users within minutes of starting to use the app. We wanted to avoid the situation where we present the user with a pre-populated planning list that matches up very poorly with what they actually have to do. Instead, we decided that the entire list shouldn’t be presented to the user early on.
+                    </p>
+
+                    <p>
+                    In another design, we went to the complete opposite end of the spectrum, deciding that the user would have no direct access to the list anywhere in the app. Instead, all edit, delete, and complete operations on the task list would be presented through discrete, easily digestible and non-overwhelming notifications. As the user marks ‘Done’ on tasks, chooses ‘Not relevant to my wedding’ for others, and moves through the process, we can formulate a better idea of what their wedding is going to be like, and where they are in the process. From this information coming in, we can create a personalized, smart planning experience.
+                    </p>
+
+                    <p>
+                    We felt like we were taking a step in the right direction by moving away from the giant overwhelming list of tasks, but identified several key issues that brought us to the final design prototype. First, we realized that the users would have to put a lot of trust in the app that all of their responses and feedback to notifications was being accounted for, and used to develop a planning timeline that works for them. While it’s obvious to us that the list is being updated dynamically and learning from the users, we believe it’s unrealistic to expect them to know this is happening and trust the process. Additionally, we recognize that some users have very specific or nontraditional components of their weddings. By closing off all interaction with the list and disallowing all customizations, we’re ignoring very real needs that users have. In response to this, we decided to land somewhere in the middle - minimizing the interaction users have with the list directly, but still allowing crucial customizations to be made to the list when extra topics and tasks are necessary. 
                     </p>
 
                     <h2>What key insights did you gain in trying to produce a design that addresses your brief?</h2>
                     <p>
+                    Based on what we knew of our users, our team created a paper prototype of our notification app for a usability test.  However, we realized pretty quickly during the test that our prototype failed in one major way: it wasn’t clear if the app was only supposed to handle reminders for tasks people needed to do to plan their weddings or if it should also store all of the information they might need to do these tasks. It also wasn’t clear if users should be able to add their own tasks or just remove tasks we had already preloaded. Initially, we thought it would be the app would only be a reminder app, and we tried to design it to reflect this, but there were some features that we had built in the made it seem to our users that there should be more functionality.  For example, when you opened a new task, you had the option to mark it as done, expand it, snooze it until later, or remove it from your task list, and we found that when people hit expand, they were expecting another screen to pop up indicating how they should do this task.  For example, if the task was “Research Florists,” they were expecting to see florists in their area and ways to contact them to get a quote.  This put our team back to the drawing board for our next prototype.  Although we haven’t had the chance to test it yet, we believe it better represents our goal for the app, and we believe that the intention of the app will be more clear to the user.
                     Response here
                     </p>
 
+                    <div class="box alt">
+                        <div class="row uniform">
+                            <div class="3u"></div>
+                            <div class="3u">
+                                <span class="image fit"><img src="images/designdevelopmentimgs/expand1.jpg" alt="" /></span>
+                            </div>
+
+                            <div class="3u">
+                                <span class="image fit"><img src="images/designdevelopmentimgs/expand2.jpg" alt="" /></span>
+                            </div>
+                            <div class="3u"></div>
+                        </div>
+                    </div>
+
+                    <p>
+                    Additionally, we realized a lot about the paper prototyping process and the importance of ambiguity while we developed our first design.  We found that certain pages of our app were too static and not flexible enough.  We were testing with real users, and we unfortunately missed out on some of the things that they were immediately looking for when they opened the app.  For example, on the checklist screen in the set up, people were looking for options to check off that weren’t there, and because they were there they thought they might not get any reminders about them.  Additionally, we found that users wanted more flexibility on a lot of our pages.  For example, we initially had our app remind people everyday and allowed them to choose at which time they would like to be reminded and how many tasks they would see each day.  However, when we spoke to a couple who both worked full time during the week, they said that having a reminder everyday would stress them out because they wouldn’t necessarily have the time to complete the task.  This made us realize that we needed to build in flexibility to all parts of our app so that different couples could have experiences that would be ideal for them.
+                    </p>
+
+                    <div class="box alt">
+                        <div class="row uniform">
+                            <div class="3u"></div>
+                            <div class="3u">
+                                <span class="image fit"><img src="images/designdevelopmentimgs/notification1.jpg" alt="" /></span>
+                            </div>
+
+                            <div class="3u">
+                                <span class="image fit"><img src="images/designdevelopmentimgs/notification2.jpg" alt="" /></span>
+                            </div>
+                            <div class="3u"></div>
+                        </div>
+                    </div>
+                    
+                    <p>
+                    During our first interview, we also realized a lot about the realities of the testing process.  Although the paper prototyping readings were super informative, most of us had not yet completed them at the time of our first interview.  Because of this, we made a few rookie mistakes that we know not to make for next time.  For example, at the beginning of the interview, we were not explicit about asking our users what was expected of them, and as such, they didn’t start actually interacting with the prototype until later on in the test, which means we lost out on some insights during the first part of the test.  Additionally, we didn’t test out paper prototype significantly before showing it to our users, so we had some trouble and awkwardness switching between screens that we had not yet prepared for.  We also found ourselves over-explaining the purpose of each screen, which we believe could have biased the initial opinions of our users.  On the other hand, some of the ambiguity we had in the paper prototype worked well for us.  Since not everything was sketched out fully, our users could give unbiased opinions on what they thought would appear in empty spaces or on the next screen.  Moving forward, we are going to use more of the interviewing techniques we read about and allow for ambiguity to be discussed by the users to ensure we get the maximum amount of unbiased insights from every usability study.
+                    </p>
                 </div>
             </div>
 
