@@ -232,6 +232,91 @@
                         <h3>Test Conditions</h3>
                             <p>Ideally, we hope to test 6 participants who will each go through 1 iteration of the test. Unfortunately, we are limited to 1 iteration for each participant, as we’re testing their familiarity and understanding of the system on a high level. A participant’s bias would clearly carry over from one iteration to the next, and we wouldn’t get useful data from asking the same questions. We do, however, plan on showing other possible iterations on the sign-up flow design (if available), and asking the participants about their thoughts on the differences and what components may be better or worse (to the best of their ability). It should be noted that our team has no prior experience in the design of controlled experiments, at least in the context of design usability tests.</p>
 
+
+                    <h1>Formal Usability Test Results</h1>
+                        <h2>Test 1: "Am I On Track" UI Element</h2>
+                            <h3>Overview of Observations</h3>
+                                <p>We interviewed two people. We showed them these two designs, the arch and the timeline:</p>
+
+                                <div class="box alt">
+                                    <div class="row uniform">
+                                        <div class="3u"></div>
+                                        <div class="3u">
+                                            <span class="image fit"><a href="images/informalusabilityimgs/OptionA.png" target="_blank"><img src="images/informalusabilityimgs/OptionA.png" alt="" /></a></span>
+                                        </div>
+
+                                        <div class="3u">
+                                            <span class="image fit"><a href="images/informalusabilityimgs/OptionC.png" target="_blank"><img src="images/informalusabilityimgs/OptionC.png" alt="" /></a></span>
+                                        </div>
+                                        <div class="3u"></div>
+                                    </div>
+                                </div>
+
+                                <p>Both of them, we observed, were stressed to be compared to average Americans planning their wedding. The first person we interviewed said “Oh f***, most users are here [pointing to where most users are] but I’m here [pointing to where he was in the planning process]”. We saw him become slightly competitive after that with his body language and his words. He was constantly saying he had to catch up, and kept leaning in. However, then he admitted that this was stressing him out. The second user was also stressed out by comparing them to most Americans. She was stressed out because she did not know where the number was coming from. Especially because hers said that she would be done planning her wedding multiple days after her wedding because she was behind most Americans. This stressed her out the most.</p>
+
+                                <p>In our timeline design, we also included a running man icon when the user was behind to inform the user how to catch up. We need more data, but with the user we tested this prototype with said that the running man was misleading. At this point we saw him get really excited to click on the running man icon to catch up. Then we saw him collapse back into his chair when he saw the popup. He said he expected much, he expected “artifical intelligence” to tell him how to catch up.</p>
+
+                                <p>Both of them felt anxious with the bright shade of red that was on the screen. For the first user, this made him stressed because it was the brightest on the screen and it felt like it was shouting. For the second user, it had more of a motivating effect. She knew what tasks needed work because of the bright color. Both of them said that both of our designs felt like a binary, either they were behind or they weren’t. That’s not realistic to humans trying to stay on track. They both recommended a gradient instead where how much on track they are. For example, a gradient from yellow to orange to red where yellow means something like “you’re a little behind but take on a task or two the next couple of times you want to receive tasks and you will be fine”. Orange would mean something like “you should take on a handful of tasks per time you want to receive tasks to catch up”. Red could mean something like “Warning, we need to give you a new schedule. You might even have to take tasks on days you did not want them.”</p>
+
+                                <p>We also got feedback that the arch was a progress bar, and to the second user that means progress. It did not evoke a sense of urgency to complete things in the future, but rather excitement that she completed things in the past.</p>
+
+
+                            <h3>Response Variables Report</h3>
+                                <p>We asked yes/no binary questions to our users asking them how they felt in terms of comprehending the tasks that needed to be completed, stress level when seeing their progress and motivation to complete the tasks. Our users both felt that they understood that they were behind based on the colors, and they both felt stressed when looking at their progress. However, users felt more motivated to complete a task and indicated quantitatively that they felt less stress when they saw the progress bar design (Option B) to the arch (Option A).  Furthermore, people felt more motivated to complete a task if there were progress bars on every category as opposed to exclusively seeing the overall progress bar.</p>
+
+                                <p>The other behavior we observed was how quickly a user would exit out of the categories page as that indicated that they felt an overwhelming amount of stress such that they would want to leave. We found that on both tests when the individual categories did not have progress bars, people were quicker to exit out of the page.</p>
+
+                            <h3>Response Variables Interpretation</h3>
+                                <p>If we were to survey people and yield the same results that they felt stressed with the progress bar as opposed to the arc means that it is a more effective way of communicating progress to our users. This can also be indicated when users are more frequently exiting the arch category page to go to a different page as it illustrates that they felt so overwhelmed with how far behind they were they had no incentive to resolve this problem. Furthermore, the stress could also derive from our colors where our users indicated that they understood they were behind based on the colors.</p>
+
+                                <p>In terms of key metrics, we observed that our users clicked on the “Categories that Need Attention” buttons much faster when there were progress bars on category buttons as opposed to exclusively only seeing the main progress bar. This timing tells us that the progress bars in each categories are effective in telling our users where they need to start taking action first.</p>
+
+
+                            <h3>Future Work</h3>
+                                <p>Based on what we observed in our tests sessions, there are a few design features of the tracker element that we feel comfortable moving forward with.  To begin with, both of the people we spoke to prefered the linear tracker over the arch-style tracker because it made them feel less anxiety about the amount of work they needed to complete, so based on this, we will be moving forward with a linear style.  Additionally, we got similar feedback regarding the style and content of the category cards that need attention, and based on this, we are planning to create a hybrid of what the two users experience that incorporates feedback from each of them.  These “need attention” category cards will be red, which people felt indicated that it needed attention better than a red mark on a blue card.  Also, each card will include its own tracker element so that users can see their status for every category, not just their overall status, which users felt was essential for them to be able to prioritize which categories they completed tasks in first.  Additionally, both of our users felt that comparing their status against other users status was not as relevant to them as comparing their status to their own expected status, which is another change we plan to implement in the final design.  An initial mock up of these new features can be seen below.  We also got some feedback on the colors of the app from one of our users, however because this is such a small subset of people, we are not committing to changing the colors unless the team as a whole finds a new color scheme that we all believe is superior to our current color scheme and follows the feedback we received.</p>
+
+                                <center><span class="image main"><a href="images/informalusabilityimgs/OptionC2.png" target="_blank"><img src="images/informalusabilityimgs/OptionC2.png" style="width:300px"></span></a></center>
+
+                                <p>If we had unlimited time to work on improving and testing our designs, our first step would be to test with more users.  The two people we did interview had some feedback that was identical and some that was directly contradictory, which makes it difficult to determine which design should be chosen to move forward with.  Based on the feedback so far, we would like to continue testing different linear style progress trackers, as the consensus between the two people we spoke to was that this style was more clear and less stress-inducing than the arch style.  However, since this is only our first iteration of the linear tracker rather than the linear progress bar we were using in earlier designs, in an ideal world we would continue testing different version of this tracker before finalizing it.  Additionally, we would like to test more color schemes with more users.  Since we were testing with such a small subset of people, we do not feel very comfortable overhauling the color scheme without showing it to at least some users.  If we had more time, we would like to test a variety of color schemes with users to see which they had the largest positive reaction to.</p>
+
+
+                        <h2>Test 2: Enhanced Signup Flow</h2>
+
+                            <h3>Overview of Observations</h3>
+                                <p>For this usability study, we were testing an enhanced sign-up flow which is longer and includes more help text to see if users understand how we defined tasks, categories, and marking a task as done and how and when tasks are assigned. We designed two of these flows that consist of the same form and two slightly different walkthroughs for the user. For each test participant, we only tested one flow as showing them the any other sign-up flows after the first one would add bias and give them additional information in answering the questions we posed about tasks, categories, marking tasks as done, and when tasks are assigned.</p>
+
+                                <p>We showed our sign-up flow to two participants each. We then asked them the following 4 questions.</p>
+
+                                <ol>
+                                    <div>
+                                        <li>We asked them to provide an example of a task if they were given a blank card, instead of the ones shown in the image below.</li>
+                                        <center><span class="image main"><a href="images/informalusabilityimgs/Walkthrough_1.png" target="_blank"><img src="images/informalusabilityimgs/Walkthrough_1.png" style="width:600px"></span></a></center>
+                                    </div>
+                                    <li>We asked them to provide an example of a category other than Venue or Budget which we had already introduced as categories in this sign-up flow.</li>
+                                    <div>
+                                        <li>We asked them when they expected our app to assign them tasks. The answer to this question was filled out by the test participant when they completed the form shown below before moving on to the walkthrough component we designed.</li>
+                                        <center><span class="image main"><a href="images/informalusabilityimgs/Form_1.png" target="_blank"><img src="images/informalusabilityimgs/Form_1.png" style="width:600px"></span></a></center>
+                                    </div>
+                                    <li>We asked them what they expected to happen when a task is marked as done and where they expect to find this completed task in our app.</li>
+                                </ol>
+
+                                <p>Users were able to answer these 4 questions successfully for both of the sign-up flows we designed. We encountered the case where users do not read the additional help text we added but found that the structure of the flow (form first, followed by walkthrough) was beneficial in conveying understanding and answering the questions successfully.</p>
+
+                            <h3>Response Variables Report</h3>
+                                <p>In our design, we indicated that we planned on studying the ability of our users to identify and accurately define key components and concepts in our app. When asked to identify an example of a task, all of our 4 testers accurately defined and gave us an example that fit in well with the definition of our system. When asked to give an additional example of what a category might be, all users provided examples of categories that fit well within our internal definitions. There was, however, some confusion as to whether subcategories existed, and this is something we plan on addressing. In response to the question ‘At what times and days will you be assigned a task’, all users recalled that they had supplied us with days that they were free as part of the sign-up flow. Finally, all 4 of the users were able to correctly identify where ‘Done’ tasks go, though we didn’t do a very effective job of describing of showing exactly where the archived list exists.</p>
+
+                            <h3>Response Variables Interpretation</h3>
+                                <p>If the results held for a larger user population, it would mean that our introduction and tutorial has done a sufficient job at introducing the key concepts and definitions. There is some underlying sentiment that some of the text is too long and verbose, but as the overall goal is to exhaustively ensure that the users understand what tasks and categories mean, I think we can cautiously say that with some minor adjustments and improvements, our sign-up flow is at least mildly effective.</p>
+
+                                <p>It’s important to note that this pilot was not largely representative of the user population - none of our users were actually getting married, and we observed varying levels of interest and engagement with the sign-up flow and tutorial.</p>
+
+                            <h3>Future Work</h3>
+                                <p>One of our largest concerns is that our test participants skimmed over the help text we added in both of our sign-up flows. The test in its entirety took less than five minutes but we still had test participants who found our sign-up flow to burdensome and told us we were providing help text for things like the search bar and the calendar when they weren’t needed. Normal people don’t read help text so we need to encourage people to make the right decision and understand fundamental concepts like what a task is without relying solely on help text.</p>
+
+                                <p>In the next week, we plan to implement a different style of walkthrough than the ones we have designed where we prompt the user to click into certain areas of the app before we start showing them help text. This simple action should identify where tasks and categories can be found even if the user doesn’t read any additional help text beyond that. We also plan on designing a Category page for our desktop interface which will more cohesively introduce the idea of categories and show the user the ones we have prepared for them as part of the walkthrough.</p>
+
+                                <p>We would love to iterate upon this usability test design process and test with more sign-up flows in a more controlled environment. Ideally, we would be looking to find the correct amount of help text needed to both maintain the test participant’s level of understanding of the main interactions within our app and not feel burdensome or excessive. Unfortunately, we do not have time to pursue this so we are operating with the working knowledge that shorter is better when it comes to help text and that we should be designing a sign-up flow that, in the absence of reading any help text at all, still communicates an adequate level of understanding.</p>
+
                 </div>
             </div>
 
