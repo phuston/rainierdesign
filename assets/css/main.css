@@ -48,6 +48,8 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.tab { margin-left: 40px; }
+
 /* Box Model */
 
 	*, *:before, *:after {
